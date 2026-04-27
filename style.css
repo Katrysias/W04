@@ -1,0 +1,205 @@
+/* Body */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    color: green;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    color: blue;
+    line-height: 1.5;
+}
+
+/* Content Box */
+.content-box {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Lists */
+ol, ul {
+    margin: 10px 20px;
+}
+
+/* Task 1: Transition Button */
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+/* Task 2: Animation Box */
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: move 2s infinite alternate;
+    margin-top: 20px;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+.pseudo-list li {
+    padding: 10px;
+}
+.filter-image {
+    width: 250px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+.quote {
+    position: relative;
+    padding-left: 30px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: lightgray;
+} 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+} 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+} 
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
